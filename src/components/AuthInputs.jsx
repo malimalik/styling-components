@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import classes from '../AuthInput.module.css';
-
+import  '../AuthInput.css';
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
@@ -23,7 +22,7 @@ export default function AuthInputs() {
 
   return (
     <div id="auth-inputs">
-      <div className={classes.controls}>
+      <div className="controls">
         <p>
           <label>Email</label>
           <input
@@ -43,11 +42,11 @@ export default function AuthInputs() {
           />
         </p>
       </div>
-      <div className={classes.actions}>
-        <button type="button" className={classes["text-button"]}>
+      <div className="actions">
+        <button type="button" className="text-button">
           Create a new account
         </button>
-        <button className={classes.button} onClick={handleLogin}>Sign In</button>
+        <button className="text-button" onClick={handleLogin}>Sign In</button>
       </div>
     </div>
   );
